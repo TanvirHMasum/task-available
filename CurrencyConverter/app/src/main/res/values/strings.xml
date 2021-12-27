@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="sell">Sell</string>
+    <string name="received">Received</string>
+    <string name="submit">Submit</string>
+    <string name="currency_exchange">Currency Exchange</string>
+    <string name="my_balance">My Balance</string>
+    <string name="done">DONE</string>
+
+    <string-array name="base_currency">
+        <item>EUR</item>
+    </string-array>
+
+    <string-array name="converted_currency">
+        <item>USD</item>
+        <item>BDT</item>
+        <item>EUR</item>
+        <item>INR</item>
+        <item>PKR</item>
+        <item>QAR</item>
+    </string-array>
+
+</resources>

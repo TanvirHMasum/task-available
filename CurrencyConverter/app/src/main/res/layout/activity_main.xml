@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/my_balance" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/et_EUR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="1000 EUR"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et_USD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="0 USD"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="5000 BDT"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="4000 INR"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/currency_exchange" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/sell"
+                android:src="@drawable/ic_arrow_up" />
+
+            <EditText
+                android:id="@+id/base_ET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/sell"
+                android:inputType="number" />
+
+            <Spinner
+                android:id="@+id/spinner_firstConversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/received"
+                android:src="@drawable/ic_arrow_down" />
+
+            <EditText
+                android:id="@+id/converted_ET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/received"
+                android:inputType="number" />
+
+            <Spinner
+                android:id="@+id/spinner_secondConversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_BTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/submit"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
